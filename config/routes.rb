@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get 'html_pages/home'
+  root 'html_pages#home'
   get 'html_pages/about'
   get 'html_pages/experience'
   get 'html_pages/casestudies'
@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get 'html_pages/contactus'
   get 'html_pages/login'
   get 'html_pages/register'
-  root 'application#hello'
+  
 end
