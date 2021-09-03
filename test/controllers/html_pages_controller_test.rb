@@ -2,63 +2,63 @@ require "test_helper"
 
 class HtmlPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get html_pages_home_url
+    get root_path
     assert_response :success
     assert_select "title", "Home | Atis Telcom"
   end
 
   test "should get about" do
-    get html_pages_about_url
+    get about_path
     assert_response :success
     assert_select "title", "About | Atis Telcom"
   end
   test "should get experience" do
-    get html_pages_experience_url
+    get experience_path
     assert_response :success
     assert_select "title", "Experience | Atis Telcom"
   end
   test "should get casestudies" do
-    get html_pages_casestudies_url
+    get casestudies_path
     assert_response :success
     assert_select "title", "Casestudies | Atis Telcom"
   end
   test "should get resources" do
-    get html_pages_resources_url
+    get resources_path
     assert_response :success
     assert_select "title", "Resources | Atis Telcom"
   end
   test "should get partners" do
-    get html_pages_partners_url
+    get partners_path
     assert_response :success
     assert_select "title", "Partners | Atis Telcom"
   end
   test "should get smartfibre" do
-    get html_pages_smartfibre_url
+    get smartfibre_path
     assert_response :success
     assert_select "title", "smartfibre | Atis Telcom"
   end
   test "should get clientportal" do
-    get html_pages_clientportal_url
+    get clientportal_path
     assert_response :success
     assert_select "title", "Clientportal | Atis Telcom"
   end
   test "should get products" do
-    get html_pages_products_url
+    get products_path
     assert_response :success
     assert_select "title", "Products | Atis Telcom"
   end
   test "should get contactus" do
-    get html_pages_contactus_url
+    get contactus_path
     assert_response :success
     assert_select "title", "contactus | Atis Telcom"
   end
   test "should get login" do
-    get html_pages_login_url
+    get login_path
     assert_response :success
     assert_select "title", "Login | Atis Telcom"
   end
   test "should get register" do
-    get html_pages_register_url
+    get register_path
     assert_response :success
     assert_select "title", "Register | Atis Telcom"
   end
