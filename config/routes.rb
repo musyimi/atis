@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/contactus', to: 'html_pages#contactus'
   get '/login', to: 'html_pages#login'
   get '/register', to: 'users#new'
+  resources :users
   
   
 end
