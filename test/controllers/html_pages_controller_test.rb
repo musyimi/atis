@@ -55,7 +55,7 @@ class HtmlPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get login" do
     get login_path
     assert_response :success
-    assert_select "title", "Login | Atis Telcom"
+    assert_select "title", "login | Atis Telcom"
   end
   test "should get register" do
     get register_path
